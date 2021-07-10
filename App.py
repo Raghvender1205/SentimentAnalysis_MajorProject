@@ -1,8 +1,8 @@
 import streamlit as st
 import pickle
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+from keras.models import load_model
+from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequence import pad_sequences
 
 def predict(message):
     model = load_model('movie_sentiment.h5')
